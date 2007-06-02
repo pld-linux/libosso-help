@@ -1,0 +1,13 @@
+diff -ur libosso-help-2.0.9-o/configure.ac libosso-help-2.0.9/configure.ac
+--- libosso-help-2.0.9-o/configure.ac	2007-06-02 09:30:15.000000000 -0600
++++ libosso-help-2.0.9/configure.ac	2007-06-02 09:32:55.000000000 -0600
+@@ -39,7 +39,7 @@
+     hildon-lgpl >= 0.9.4
+     libosso >= 1.0.0
+     libpng
+-    libgtkhtml-3.8
++    libgtkhtml-3.14
+ )
+ AC_SUBST( DEPS_CFLAGS )
+ AC_SUBST( DEPS_LIBS )
+Only in libosso-help-2.0.9: configure.ac~

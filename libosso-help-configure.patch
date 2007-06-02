@@ -1,0 +1,13 @@
+diff -ur libosso-help-2.0.9-o/configure.ac libosso-help-2.0.9/configure.ac
+--- libosso-help-2.0.9-o/configure.ac	2007-01-04 03:13:54.000000000 -0700
++++ libosso-help-2.0.9/configure.ac	2007-06-02 09:14:05.000000000 -0600
+@@ -10,7 +10,7 @@
+ AC_INIT(libosso-help, 2.0.6)
+ 
+ # Tests that source dir exists
+-AC_CONFIG_SRCDIR( [src/osso-helplib.c] )
++AC_CONFIG_SRCDIR([src/osso-helplib.c])
+ 
+ # For automake: generate rules to reproduce config.h, if needed
+ AM_CONFIG_HEADER(config.h)
+Only in libosso-help-2.0.9: configure.ac~
