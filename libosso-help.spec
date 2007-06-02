@@ -1,14 +1,14 @@
-#
 Summary:	Maemo osso-help library
+Summary(pl.UTF-8):	Biblioteka Maemo osso-help
 Name:		libosso-help
 Version:	2.0.9
 Release:	1
 License:	LGPL
-Group:		Development/Libraries
-Source0:	http://repository.maemo.org/pool/bora/free/source/libosso-help_2.0.9-1.tar.gz
+Group:		Libraries
+Source0:	http://repository.maemo.org/pool/bora/free/source/%{name}_%{version}-1.tar.gz
 # Source0-md5:	eb53cc209a7b86b5957df7395400a14e
-Patch0:	%{name}-configure.patch
-Patch1:	%{name}-gtkhtml.patch
+Patch0:		%{name}-configure.patch
+Patch1:		%{name}-gtkhtml.patch
 URL:		http://maemo.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,12 +21,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 In-place editor library for the Maemo platform.
 
+%description -l pl.UTF-8
+Biblioteka edytora dla platformy Maemo.
+
 %package devel
 Summary:	Header files for libosso-help
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libosso-help
 Group:		Development/Libraries
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libosso-help.
+
+%description devel -l pl.UTF-8
+Pliki nagłówkowe biblioteki libosso-help.
 
 %package static
 Summary:	Static libosso-help library
